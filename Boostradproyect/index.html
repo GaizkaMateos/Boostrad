@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,15 +17,20 @@
     <nav class="navbar navbar-expand-lg bg-light">
       
       <div>
-        <a class="navbar-brand" href="#">BoostLab Academy</a>
+        <a class="navbar-brand px-4" href="#">BoostLab Academy</a>
 
+<<<<<<< eulo
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+=======
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+>>>>>>> main
           <span class="navbar-toggler-icon"></span>
         </button>
        
 
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse m-3" id="menuPrincipal">
+          <ul class="navbar-nav  px-auto">
             <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
             <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -40,39 +46,40 @@
   <main>
     <!-- HERO con intención, pero mal estructurado visualmente -->
     <section class="bg-light" aria-labelledby="titulo-hero">
-      <div>
-        <h1 id="titulo-hero">Aprende Bootstrap creando interfaces reales</h1>
-        <p>
+      <div class="card p-2">
+        <h1 id="titulo-hero" class="card-title my-4">Aprende Bootstrap creando interfaces reales</h1>
+        <p class="card-text">
           Un laboratorio práctico para entender cómo funcionan el grid,
           los componentes, las utilidades y el responsive en Bootstrap.
         </p>
-        <a href="#contacto">Quiero apuntarme</a>
+        <a href="#contacto" class="btn btn-lg btn-info ">Quiero apuntarme</a>
 
-        <img src="https://placehold.co/600x360?text=Bootstrap+Lab" alt="Ilustración de una interfaz web construida con Bootstrap">
+        <img src="https://placehold.co/600x360?text=Bootstrap+Lab"
+          alt="Ilustración de una interfaz web construida con Bootstrap" class="card-img">
       </div>
     </section>
 
     <!-- BENEFICIOS: contenido bueno, estructura pobre -->
     <section id="beneficios" aria-labelledby="titulo-beneficios">
-      <div>
+      <div class="container-fluid text-center">
         <h2 id="titulo-beneficios">Qué vas a practicar</h2>
-        <p>
+        <p class="p-2">
           El objetivo no es memorizar clases, sino probar, comparar y entender
           cuándo Bootstrap ayuda a construir más rápido.
         </p>
 
-        <div>
-          <article>
+        <div class="row">
+          <article class="col-sm">
             <h3>Grid responsive</h3>
             <p>Organiza contenido en columnas que se adaptan a diferentes pantallas.</p>
           </article>
 
-          <article>
+          <article class="col-sm">
             <h3>Componentes</h3>
             <p>Usa piezas ya preparadas como botones, tarjetas, alertas o navegación.</p>
           </article>
 
-          <article>
+          <article class="col-sm">
             <h3>Utilidades</h3>
             <p>Ajusta espaciados, alineación, colores y tamaños directamente desde HTML.</p>
           </article>
@@ -82,26 +89,26 @@
 
     <!-- RECURSOS: contenido repetible para cards -->
     <section id="recursos" aria-labelledby="titulo-recursos">
-      <div>
+      <div class="container text-center">
         <h2 id="titulo-recursos">Recursos del laboratorio</h2>
 
-        <div>
-          <article>
-            <img src="https://placehold.co/400x220?text=Grid" alt="">
+        <div class="row">
+          <article class="col-sm">
+            <img src="https://placehold.co/400x220?text=Grid" alt="" class="img-fluid">
             <h3>Guía de grid</h3>
             <p>Aprende a usar container, row y columnas responsive.</p>
             <a href="#">Ver recurso</a>
           </article>
 
-          <article>
-            <img src="https://placehold.co/400x220?text=Cards" alt="">
+          <article class="col-sm">
+            <img src="https://placehold.co/400x220?text=Cards" alt="" class="img-fluid">
             <h3>Componentes básicos</h3>
             <p>Practica con tarjetas, botones y elementos reutilizables.</p>
             <a href="#">Ver recurso</a>
           </article>
 
-          <article>
-            <img src="https://placehold.co/400x220?text=Utilities" alt="">
+          <article class="col-sm">
+            <img src="https://placehold.co/400x220?text=Utilities" alt="" class="img-fluid">
             <h3>Utilidades visuales</h3>
             <p>Mejora spacing, alineación, legibilidad y jerarquía visual.</p>
             <a href="#">Ver recurso</a>
@@ -157,4 +164,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
