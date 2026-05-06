@@ -10,14 +10,18 @@
 </head>
 
 <body>
+
   <header>
+    
     <nav class="navbar navbar-expand-lg bg-light">
+      
       <div>
         <a class="navbar-brand" href="#">BoostLab Academy</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
+       
 
         <div class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav">
@@ -27,7 +31,10 @@
           </ul>
         </div>
       </div>
+    
     </nav>
+    
+    
   </header>
 
   <main>
@@ -115,11 +122,11 @@
     </section>
 
     <!-- FORMULARIO: semántico y accesible, pero sin estilo -->
-    <section id="contacto" aria-labelledby="titulo-contacto">
+    <section id="contacto" aria-labelledby="titulo-contacto" class="ml-10">
       <div>
-        <h2 id="titulo-contacto">Solicita información</h2>
+        <h2 id="titulo-contacto" class="text-center">Solicita información</h2>
 
-        <form action="#" method="post">
+        <form action="#" method="post" class="d-flex flex-wrap justify-content-center">
           <div>
             <label for="nombre">Nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="name" required>
@@ -135,17 +142,18 @@
             <textarea id="mensaje" name="mensaje" rows="4"></textarea>
           </div>
 
-          <button type="submit">Enviar solicitud</button>
+          <button type="submit" class="btn btn-danger ms-5 my-5">Enviar solicitud</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>
-      <p>&copy; 2026 BoostLab Academy. Proyecto de práctica para Bootstrap Puzzle Lab.</p>
+    <div class="text-center">
+      <p class="btn btn-secondary">&copy; 2026 BoostLab Academy. Proyecto de práctica para Bootstrap Puzzle Lab.</p>
     </div>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
